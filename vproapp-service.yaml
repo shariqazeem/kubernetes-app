@@ -4,10 +4,9 @@ metadata:
   name: vproapp-service
 spec:
   ports:
-    - ports: 80
+    - port: 80
       targetPort: vproapp-port
       protocol: TCP
   selector:
     app: vproapp
-  type: LoadBalancer
-
+  type: LoadBalancers
